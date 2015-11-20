@@ -1,0 +1,10 @@
+# .project-aliases
+
+# Developer Convenience Aliases #
+alias path='echo $PATH'
+alias eclipse='~/eclipse/jee-mars/eclipse/eclipse'
+alias gradle='$GRADLE_HOME/bin/gradle'
+alias mvn='$MAVEN_HOME/bin/mvn'
+
+# List Directory Contents Aliases #
+alias la='ls -al --color=auto'

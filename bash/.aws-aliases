@@ -1,0 +1,9 @@
+# .aws-aliases
+
+# AWS Region Aliases #
+alias aws-region='echo $AWS_DEFAULT_REGION'
+alias aws-east='export AWS_DEFAULT_REGION=us-east-1'
+alias aws-west='export AWS_DEFAULT_REGION=us-west-1'
+
+# AWS Code Commit Aliases #
+alias aws-cc='aws codecommit'

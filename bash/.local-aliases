@@ -1,0 +1,18 @@
+# .local-aliases
+
+# Force interactive mode, i.e. prompt before overwrite or removal
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Override Global Eclipse IDE alias
+alias eclipse='~/eclipse/jee-mars/eclipse/eclipse'
+
+# List Git Aliases
+alias gla='git config --global --list | grep alias'
+
+# Docker Aliases
+alias docker='sudo docker'
+alias dkr='docker'
+alias dkrc='docker-compose'
+alias dkrm='docker-machine'
