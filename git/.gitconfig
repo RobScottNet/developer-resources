@@ -5,6 +5,8 @@
 	editor = atom --wait
 [push]
 	default = simple
+[url "https://"]
+	insteadOf = git://
 [alias]
   # The source for these aliases was: http://durdn.com/blog/2012/11/22/must-have-git-aliases-advanced-examples/
   # Refer to the source for explanation and usage.
