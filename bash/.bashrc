@@ -28,6 +28,9 @@ if [ -f /home/$USER/.local-aliases ]; then
 	source /home/$USER/.local-aliases
 fi
 
+# Set-up aws cli command completion
+complete -C '/usr/bin/aws_completer' aws
+
 # Set-up git prompt support
 if [ -f /home/$USER/.git-prompt.sh ]; then
 	source /home/$USER/.git-prompt.sh
@@ -45,6 +48,12 @@ else
 	source /home/$USER/.git-completion.bash
 fi
 
-# THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+# THE FOLLOWING MUST BE AT THE END OF THE FILE TO WORK!!!
+
+# Activate the Software Development Kit Manager
 export SDKMAN_DIR="/home/$USER/.sdkman"
 [[ -s "/home/$USER/.sdkman/bin/sdkman-init.sh" ]] && source "/home/$USER/.sdkman/bin/sdkman-init.sh"
+
+# Activate the Node Version Manager
+export NVM_DIR="/home/rscott/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
