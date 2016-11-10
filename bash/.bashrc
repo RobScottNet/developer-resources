@@ -9,14 +9,15 @@ fi
 # export SYSTEMD_PAGER=
 
 # Developer platform environment variables
-export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.65-2.b17.el7_1.x86_64"
-export GRADLE_HOME="/home/$USER/Programs/gradle-2.8"
-export MAVEN_HOME="/home/$USER/Programs/apache-maven-3.3.3"
+# export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.65-2.b17.el7_1.x86_64"
 
 # Source project aliases and functions
 if [ -f /home/$USER/.project-aliases ]; then
 	source /home/$USER/.project-aliases
 fi
+
+# Add Python 3.5 to the login environment
+source scl_source enable rh-python35
 
 # Source Amazon Web Services (AWS) CLI aliases
 if [ -f /home/$USER/.aws-aliases ]; then
